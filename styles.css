@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background: url("image/bg-1.avif");
+}
+
+.container {
+    max-width: 390px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-row {
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.input-row input[type="text"],
+.text textarea,
+.text select {
+    width: calc(100% - 40px);
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    width: 390px;
+    margin-bottom: 10px;
+}
+
+.input-row input[type="text"] {
+    padding-left: 40px;
+}
+
+.input-row i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.checkbox-container {
+    margin-bottom: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-label {
+    color: #555;
+}
+
+.button {
+    text-align: center;
+}
+
+.button a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.button button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 380px) {
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .input-row i {
+        font-size: 18px;
+
+    }
+}
